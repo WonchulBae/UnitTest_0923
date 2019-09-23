@@ -39,7 +39,12 @@ import static org.junit.Assert.*;
 //  1) 가독성
 //     => 테스트 메소드 이름 / 테스트 실패 메세지
 //  2) 유지보수성
+//     => 테스트 메소드 안에서는 절대 제어 구문을 사용하면 안된다.
+//     => 만약 필요하다면, 별도의 테스트 유틸리티 메소드로 추출해서 사용해야 한다.
 //  3) 신뢰성
+
+// @Test
+//  => AOP(관점 지향 프로그래밍)
 
 public class CalculatorTest {
 
@@ -51,6 +56,10 @@ public class CalculatorTest {
         // fail("작성 중입니다.");
         // Arrange
         Calculator calculator = new Calculator();
+
+        // Fixture 설치
+        //  정의: xUnit Test Pattern에서 SUT를 실행하기 위해 해주어야 하는 사전 작업
+        //   (객체 생성, 초기화, 준비 작업)
 
         // Act
         calculator.add(2);
@@ -71,24 +80,3 @@ public class CalculatorTest {
 
 
 
-// SUT: System Under Test
-// = CUT(Code/Class Under Test)
-class Calculator {
-    private int value;
-
-    public Calculator() {
-        value = 0;
-    }
-
-    public void add(int a) {
-        value += a;
-    }
-
-    public void sub(int a) {
-        value -= a;
-    }
-
-    public int display() {
-        return 0;
-    }
-}
