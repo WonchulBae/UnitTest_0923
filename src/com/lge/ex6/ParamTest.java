@@ -44,29 +44,34 @@ public class ParamTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {2},
-                {3},
-                {5},
-                {7},
-                {11},
-                {13}
+                {2, true},
+                {3, true},
+                {5, true},
+                {7, true},
+                {11, true},
+                {13, true},
+                {4, false},
+                {8, false},
+                {9, false},
+                {12, false},
         });
     }
 
     // 생성자 정의
     private int value;
-    public ParamTest(int value) {
+    private boolean expected;
+    public ParamTest(int value, boolean expected) {
         this.value = value;
+        this.expected = expected;
     }
 
     // 이제는 입력된 데이터를 기반으로 다양한 테스트 메소드를 작성하면 됩니다.
     @Test
     public void primeTest() throws Exception {
-        System.out.println("value: " + value);
-        assertTrue(Util.isPrime(value));
+        // System.out.println("value: " + value);
+        // assertTrue(Util.isPrime(value));
+        assertEquals(expected, Util.isPrime(value));
     }
-
-
 }
 
 /*
