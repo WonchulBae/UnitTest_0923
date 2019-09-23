@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a939866-7f92-4e2b-8b60-d8f80da8c488" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/lge/ex4/Hamcrest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex3/SampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex3/SampleTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex3/SampleTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex3/SampleTest2.class" afterDir="false" />
@@ -49,18 +50,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SampleTest2">
-    <configuration name="SampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Hamcrest.test2">
+    <configuration name="Hamcrest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lge.ex3.*" />
+          <option name="PATTERN" value="com.lge.ex4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex3" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex3.SampleTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.lge.ex4" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex4.Hamcrest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hamcrest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTest_0923" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lge.ex4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lge.ex4" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex4.Hamcrest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,23 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleTest2.fooTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UnitTest_0923" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lge.ex3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex3" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex3.SampleTest2" />
-      <option name="METHOD_NAME" value="fooTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SampleTest.fooTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SampleTest.assertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +124,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.lge.ex3" />
       <option name="MAIN_CLASS_NAME" value="com.lge.ex3.SampleTest" />
-      <option name="METHOD_NAME" value="fooTest" />
+      <option name="METHOD_NAME" value="assertTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Hamcrest.test2" />
+        <item itemvalue="JUnit.Hamcrest.test1" />
+        <item itemvalue="JUnit.SampleTest.assertTest" />
         <item itemvalue="JUnit.SampleTest2" />
         <item itemvalue="JUnit.SampleTest2.badTest" />
-        <item itemvalue="JUnit.SampleTest" />
-        <item itemvalue="JUnit.SampleTest2.fooTest" />
-        <item itemvalue="JUnit.SampleTest.fooTest" />
       </list>
     </recent_temporary>
   </component>

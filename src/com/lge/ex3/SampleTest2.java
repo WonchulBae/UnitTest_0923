@@ -3,6 +3,7 @@ package com.lge.ex3;
 
 
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.security.InvalidParameterException;
@@ -13,13 +14,26 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class SampleTest2 {
 
+    @Test
+    public void assertTest() throws Exception {
+        double a = 0.7;
+        double b = 0.1 * 7;
+
+        assertEquals(a, b, 0.00001); // !!!
+    }
+
+
+    @DisplayName("2더하기 2는 4의 결과가 나오지는 검증하는 테스트입니다.")
+    @Test
+    public void testAdd() throws Exception {
+
+    }
+
     @Disabled(value = "작성중입니다.")
     @Test
     public void badTest() throws Exception {
         // fail("작성중입니다.");
     }
-
-
 
     void foo() throws Exception {
         TimeUnit.SECONDS.sleep(3);

@@ -1,6 +1,5 @@
 package com.lge.ex3;
 
-
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -11,6 +10,22 @@ import static org.junit.Assert.*;
 
 // JUnit 4의 기능
 public class SampleTest {
+    // 4. 배열 비교 단언문 / 부동 소수점 비교
+    @Test
+    public void assertTest() throws Exception {
+        double a = 0.7;
+        double b = 0.1 * 7;
+
+        assertEquals(a, b, 0.00001);
+
+        String[] name1 = { "42", "Tom" };
+        String[] name2 = { "42", "Tom" };
+
+        // assertEquals(name1, name2); // Wrong!!!
+        assertArrayEquals(name1, name2);
+    }
+
+
     // 3. 테스트 비활성화
     //  : 전체 테스트의 결과에 영향을 주지 않고,
     //    비활성화한 테스트가 존재해야 한다는 사실은 알아야 한다.
@@ -20,7 +35,6 @@ public class SampleTest {
         // fail("작성중입니다.");
     }
 
-    
     // 2. 비기능 테스트
     //    : 시간(성능)
     void foo() throws Exception {
