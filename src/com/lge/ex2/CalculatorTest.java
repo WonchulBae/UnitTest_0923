@@ -30,6 +30,11 @@ import static org.junit.Assert.*;
 // tc.setUp();
 // tc.testSub();
 
+// TestCase Class = Test Suite Class
+//                  ; 동일한 Fixture를 가지는 테스트 메소드의 집합
+
+
+// https://github.com/imguru/UnitTest_0923
 public class CalculatorTest {
     private Calculator calculator;
 
