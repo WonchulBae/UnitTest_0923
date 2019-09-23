@@ -1,7 +1,59 @@
 package com.lge.ex5;
 
-import org.junit.*;
+import org.junit.jupiter.api.*;
+import java.util.concurrent.TimeUnit;
 
+import static org.junit.jupiter.api.Assertions.*;
+
+public class TerminalTest {
+    private static Terminal terminal;
+
+    @BeforeAll
+    public static void setUpTestCase() throws Exception {
+        System.out.println("setUpTestCase");
+        terminal = new Terminal();
+        terminal.connect();
+    }
+
+    @AfterAll
+    public static void tearDownTestCase() throws Exception {
+        System.out.println("tearDownTestCase");
+        terminal.disconnect();
+    }
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        System.out.println("setUp");
+//        terminal = new Terminal();
+//        terminal.connect();
+    }
+
+    @AfterEach
+    public void tearDown() throws Exception {
+        System.out.println("tearDown");
+//        terminal.disconnect();
+    }
+
+    @Test
+    public void loginTest() throws Exception {
+        System.out.println("loginTest");
+        terminal.login("guest", "password");
+
+        assertTrue(terminal.isLogin());
+    }
+
+    @Test
+    public void logoutTest() throws Exception {
+        System.out.println("logoutTest");
+        terminal.login("guest", "password");
+        terminal.logout();
+
+        assertFalse(terminal.isLogin());
+    }
+}
+
+/*
+import org.junit.*;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.*;
@@ -76,6 +128,8 @@ public class TerminalTest {
         assertFalse(terminal.isLogin());
     }
 }
+*/
+
 /*
 public class TerminalTest {
     @Test

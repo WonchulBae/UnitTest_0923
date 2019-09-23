@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2a939866-7f92-4e2b-8b60-d8f80da8c488" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex4/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex4/Bank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex4/Hamcrest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex4/Hamcrest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex5/Terminal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex5/Terminal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex5/TerminalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex5/TerminalTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lge/ex5/TerminalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lge/ex5/TerminalTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
