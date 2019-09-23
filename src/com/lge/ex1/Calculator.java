@@ -37,6 +37,6 @@ public class Calculator {
     }
 
     public int display() {
-        return 0;
+        return value;
     }
 }
