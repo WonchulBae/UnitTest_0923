@@ -4,11 +4,26 @@ package com.lge.ex3;
 import org.junit.Test;
 
 import java.security.InvalidParameterException;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.*;
 
 // JUnit 4의 기능
 public class SampleTest {
+    // 2. 비기능 테스트
+    //    : 시간(성능)
+    void foo() throws Exception {
+        TimeUnit.SECONDS.sleep(3);
+    }
+
+    // foo() 함수는 2초 안에 수행되어야만 합니다.
+    @Test(timeout = 2000)
+    public void fooTest() throws Exception {
+        foo();
+    }
+
+
+
     static public Integer parseInt(String value)
             throws NumberFormatException {
         return Integer.parseInt(value);
@@ -25,7 +40,6 @@ public class SampleTest {
 
         parseInt(bad);
     }
-
 
     @Test
     public void parseIntTest_junit3() throws Exception {

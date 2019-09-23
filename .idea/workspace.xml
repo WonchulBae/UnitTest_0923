@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a939866-7f92-4e2b-8b60-d8f80da8c488" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lge/ex3/SampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lge/ex3/SampleTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex2/CalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex2/CalculatorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lge/ex2/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lge/ex2/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex3/SampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex3/SampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex3/SampleTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex3/SampleTest2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lge/ex3/SampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lge/ex3/SampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lge/ex3/SampleTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lge/ex3/SampleTest2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,33 +49,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SampleTest2.parseIntTest">
-    <configuration name="CalculatorTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SampleTest2.fooTest">
+    <configuration name="SampleTest2.fooTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lge.ex2.*" />
+          <option name="PATTERN" value="com.lge.ex3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex2" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex2.CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.foo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UnitTest_0923" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lge.ex2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex2" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex2.CalculatorTest" />
-      <option name="METHOD_NAME" value="foo" />
+      <option name="PACKAGE_NAME" value="com.lge.ex3" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex3.SampleTest2" />
+      <option name="METHOD_NAME" value="fooTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,6 +77,22 @@
       <option name="PACKAGE_NAME" value="com.lge.ex3" />
       <option name="MAIN_CLASS_NAME" value="com.lge.ex3.SampleTest2" />
       <option name="METHOD_NAME" value="parseIntTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleTest.fooTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTest_0923" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lge.ex3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lge.ex3" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex3.SampleTest" />
+      <option name="METHOD_NAME" value="fooTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SampleTest2.fooTest" />
+        <item itemvalue="JUnit.SampleTest.fooTest" />
         <item itemvalue="JUnit.SampleTest2.parseIntTest" />
         <item itemvalue="JUnit.SampleTest.parseIntTest_junit4" />
         <item itemvalue="JUnit.SampleTest.parseIntTest" />
-        <item itemvalue="JUnit.CalculatorTest.foo" />
-        <item itemvalue="JUnit.CalculatorTest (1)" />
       </list>
     </recent_temporary>
   </component>
