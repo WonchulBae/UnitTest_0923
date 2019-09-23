@@ -37,16 +37,27 @@ import static org.junit.Assert.*;
 // tc.tearDown();
 
 
+// 문제점
+// 1) 복잡하다.
+//   : xUnit Test Framework 마다 사용하는 방법이 다릅니다.
+// 2) 테스트의 실패의 경우 원인 데이터가 무엇인지 알기 어렵다.
+//   : @Parameterized.Parameters(name = "{index} - v:{0}, e:{1}")
+//   => 테스트의 이름을 변경하는 기능을 'JUnit4'에서 제공하고 있습니다.
+// 3) TestCase 클래스를 별도로 작성해야 합니다.
+//   : SUT에서 일반적인 테스트와 파라미터화테스트가 동시에 필요할 경우, 별도의 테스트 케이스 클래스를
+//     작성해야 합니다.
+
+
 @RunWith(value = Parameterized.class)
 public class ParamTest {
     // Object[]: reflection을 통해 객체를 생성할 때, 생성자의 인자를 전달하는 타입.
     // Data Set 정의
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index} - v:{0}, e:{1}")
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
                 {2, true},
                 {3, true},
-                {5, true},
+                {5, false},
                 {7, true},
                 {11, true},
                 {13, true},
@@ -109,7 +120,7 @@ final class Util {
     private Util() {
     }
 
-    static boolean isPrime(int value) {
+    public static boolean isPrime(int value) {
         for (int i = 2; i <= value; ++i) {
             if (value % i == 0 && i != value) {
                 return false;
