@@ -1,6 +1,8 @@
 package com.lge.ex3;
 
 
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.security.InvalidParameterException;
@@ -10,6 +12,15 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SampleTest2 {
+
+    @Disabled(value = "작성중입니다.")
+    @Test
+    public void badTest() throws Exception {
+        // fail("작성중입니다.");
+    }
+
+
+
     void foo() throws Exception {
         TimeUnit.SECONDS.sleep(3);
     }

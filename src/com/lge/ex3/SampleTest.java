@@ -1,6 +1,7 @@
 package com.lge.ex3;
 
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.security.InvalidParameterException;
@@ -10,10 +11,20 @@ import static org.junit.Assert.*;
 
 // JUnit 4의 기능
 public class SampleTest {
+    // 3. 테스트 비활성화
+    //  : 전체 테스트의 결과에 영향을 주지 않고,
+    //    비활성화한 테스트가 존재해야 한다는 사실은 알아야 한다.
+    @Ignore(value = "작성중입니다.")
+    @Test
+    public void badTest() throws Exception {
+        // fail("작성중입니다.");
+    }
+
+    
     // 2. 비기능 테스트
     //    : 시간(성능)
     void foo() throws Exception {
-        TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(1);
     }
 
     // foo() 함수는 2초 안에 수행되어야만 합니다.
@@ -21,7 +32,6 @@ public class SampleTest {
     public void fooTest() throws Exception {
         foo();
     }
-
 
 
     static public Integer parseInt(String value)
