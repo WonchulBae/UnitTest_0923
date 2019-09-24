@@ -3,19 +3,16 @@ package com.lge.ex13;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
-class StubFileSystem implements IFileSystemManager {
-    @Override
-    public boolean isValid(String filename) {
-        return true;
-    }
-}
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class LoggerTest {
     @Test
     public void isValidFilename_NameLoggerThan5Chars_ReturnsTrue() throws Exception {
         String filename = "good_file.log";
-        Logger logger = new Logger(new StubFileSystem());
+        IFileSystemManager stub = mock(IFileSystemManager.class);
+        when(stub.isValid(filename)).thenReturn(true);
+        Logger logger = new Logger(stub);
 
         boolean actual = logger.isValidFilename(filename);
 
@@ -25,7 +22,9 @@ public class LoggerTest {
     @Test
     public void isValidFilename_NameShorterThan5Chars_ReturnsFalse() throws Exception {
         String filename = "bad.log";
-        Logger logger = new Logger(new StubFileSystem());
+        IFileSystemManager stub = mock(IFileSystemManager.class);
+        when(stub.isValid(filename)).thenReturn(true);
+        Logger logger = new Logger(stub);
 
         assertFalse("파일명이 다섯글자 미만일 때", logger.isValidFilename(filename));
     }
