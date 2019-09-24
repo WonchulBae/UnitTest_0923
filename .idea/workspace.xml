@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a939866-7f92-4e2b-8b60-d8f80da8c488" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lge/ex8/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lge/ex8/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lge/ex8/UserTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LoggerTest">
+  <component name="RunManager" selected="JUnit.UserTest.moveTest_badConnection">
     <configuration name="LoggerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
@@ -93,44 +93,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParamTest.primeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.moveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lge.ex6.*" />
+          <option name="PATTERN" value="com.lge.ex8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex6" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex6.ParamTest" />
-      <option name="METHOD_NAME" value="primeTest" />
+      <option name="PACKAGE_NAME" value="com.lge.ex8" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex8.UserTest" />
+      <option name="METHOD_NAME" value="moveTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TerminalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.moveTest_badConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lge.ex5.*" />
+          <option name="PATTERN" value="com.lge.ex8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex5" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex5.TerminalTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.lge.ex8" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex8.UserTest" />
+      <option name="METHOD_NAME" value="moveTest_badConnection" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.moveTest_badConnection" />
+        <item itemvalue="JUnit.UserTest.moveTest" />
         <item itemvalue="JUnit.LoggerTest" />
         <item itemvalue="JUnit.ParamTest2" />
         <item itemvalue="JUnit.ParamTest2.primeTest" />
-        <item itemvalue="JUnit.ParamTest.primeTest" />
-        <item itemvalue="JUnit.TerminalTest" />
       </list>
     </recent_temporary>
   </component>
