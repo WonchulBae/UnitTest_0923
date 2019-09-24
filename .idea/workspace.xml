@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a939866-7f92-4e2b-8b60-d8f80da8c488" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lge/ex10/DLogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_mockito_mockito_core_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lge/ex11/DLogTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTest_0923.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest_0923.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/lge/ex10/DLogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lge/ex10/DLogTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +35,9 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -46,18 +52,50 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserManagerTest.createTest">
-    <configuration name="LoggerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DLogTest.writeTest (1)">
+    <configuration name="DLogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lge.ex7.*" />
+          <option name="PATTERN" value="com.lge.ex10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex7" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex7.LoggerTest" />
+      <option name="PACKAGE_NAME" value="com.lge.ex10" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex10.DLogTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DLogTest.writeTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTest_0923" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lge.ex11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lge.ex11" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex11.DLogTest" />
+      <option name="METHOD_NAME" value="writeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DLogTest.writeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTest_0923" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lge.ex10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lge.ex10" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex10.DLogTest" />
+      <option name="METHOD_NAME" value="writeTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -93,45 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.moveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UnitTest_0923" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lge.ex8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex8" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex8.UserTest" />
-      <option name="METHOD_NAME" value="moveTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.moveTest_badConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UnitTest_0923" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lge.ex8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex8" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex8.UserTest" />
-      <option name="METHOD_NAME" value="moveTest_badConnection" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DLogTest.writeTest (1)" />
+        <item itemvalue="JUnit.DLogTest" />
+        <item itemvalue="JUnit.DLogTest.writeTest" />
         <item itemvalue="JUnit.UserManagerTest.createTest" />
         <item itemvalue="JUnit.UserManagerTest" />
-        <item itemvalue="JUnit.UserTest.moveTest_badConnection" />
-        <item itemvalue="JUnit.UserTest.moveTest" />
-        <item itemvalue="JUnit.LoggerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +159,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

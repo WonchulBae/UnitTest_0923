@@ -37,6 +37,8 @@ public class DLogTest {
         DLog log = new DLog();
         SpyTarget spy1 = new SpyTarget();
         SpyTarget spy2 = new SpyTarget();
+        log.addTarget(spy1);
+        log.addTarget(spy2);
         Level level = Level.INFO;
         String message = "log_test_message";
 
