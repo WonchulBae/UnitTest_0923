@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 import static org.junit.Assert.assertEquals;
 
@@ -41,11 +42,12 @@ public class UserManagerTest {
 
         manager.create(name, age);
 
+        // 사용자 정의 객체를 assertEquals를 통해 사용할 경우, 필요한 기능이 있습니다.
         assertEquals(expected, manager.find(name));
     }
 }
 
-// SUT
+// SUT - equals / hashCode
 class User {
     private String name;
     private int age;
@@ -53,6 +55,26 @@ class User {
     public User(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+
+        if (obj.getClass() != User.class)
+            return false;
+
+        User user = (User) obj;
+        return Objects.equals(user.name, name) &&
+                user.age == age;
     }
 }
 

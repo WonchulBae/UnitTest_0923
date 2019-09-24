@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2a939866-7f92-4e2b-8b60-d8f80da8c488" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex8/TCPConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex8/TCPConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex8/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex8/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex8/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex8/UserTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/lge/ex9/UserManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lge/ex9/UserManagerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.moveTest_badConnection">
+  <component name="RunManager" selected="JUnit.UserManagerTest.createTest">
     <configuration name="LoggerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
@@ -62,32 +65,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParamTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lge.ex6.*" />
+          <option name="PATTERN" value="com.lge.ex9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex6" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex6.ParamTest2" />
+      <option name="PACKAGE_NAME" value="com.lge.ex9" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex9.UserManagerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParamTest2.primeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserManagerTest.createTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lge.ex6.*" />
+          <option name="PATTERN" value="com.lge.ex9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex6" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex6.ParamTest2" />
-      <option name="METHOD_NAME" value="primeTest" />
+      <option name="PACKAGE_NAME" value="com.lge.ex9" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex9.UserManagerTest" />
+      <option name="METHOD_NAME" value="createTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserManagerTest.createTest" />
+        <item itemvalue="JUnit.UserManagerTest" />
         <item itemvalue="JUnit.UserTest.moveTest_badConnection" />
         <item itemvalue="JUnit.UserTest.moveTest" />
         <item itemvalue="JUnit.LoggerTest" />
-        <item itemvalue="JUnit.ParamTest2" />
-        <item itemvalue="JUnit.ParamTest2.primeTest" />
       </list>
     </recent_temporary>
   </component>
