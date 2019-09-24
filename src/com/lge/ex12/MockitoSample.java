@@ -1,6 +1,7 @@
 package com.lge.ex12;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.InOrder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +17,12 @@ class Point {
 }
 
 class SUT {
+    public void koo(List<String> s) {
+        s.add("first");
+        s.add("second");
+        s.add("third");
+    }
+
     public void hoo(Point point) {
         point.move(10, 20);
         point.move(10, 30);
@@ -36,6 +43,23 @@ class SUT {
 }
 
 public class MockitoSample {
+
+    // verify - 순서를 확인하지 않습니다.
+    //  => inOrder
+    @Test
+    public void kooTest() throws Exception {
+        List<String> mockedList = mock(List.class);
+        SUT sut = new SUT();
+
+        sut.koo(mockedList);
+
+        InOrder inOrder = inOrder(mockedList);
+        inOrder.verify(mockedList).add("first");
+        inOrder.verify(mockedList).add("second");
+        inOrder.verify(mockedList).add("third");
+    }
+
+
     @Test
     public void hooTest() throws Exception {
         Point mockedPoint = mock(Point.class);
@@ -49,7 +73,7 @@ public class MockitoSample {
 
         verify(mockedPoint).move(eq(10), anyInt());
     }
-    
+
 
     // - 호출 횟수 지정 방법
     // times(1): 정확한 횟수를 지정한다.
@@ -59,7 +83,6 @@ public class MockitoSample {
     // - 호출 인자
     //   anyXXX()
     //  : 인자는 상관하지 않고, 함수의 호출 여부만을 검증할 수 있습니다.
-
     @Test
     public void gooTest() throws Exception {
         List<String> mockedList = mock(List.class);
@@ -73,6 +96,7 @@ public class MockitoSample {
         // verify(mockedList, atMostOnce()).add("twice");
     }
 
+    // 호출 여부
     @Test
     public void fooTest() throws Exception {
         List<String> mockedList = mock(List.class);
