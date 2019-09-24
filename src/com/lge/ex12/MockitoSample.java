@@ -1,7 +1,10 @@
 package com.lge.ex12;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +16,8 @@ class Point {
     private int x;
     private int y;
 
-    public void move(int x, int y) {}
+    public void move(int x, int y) {
+    }
 }
 
 class SUT {
@@ -43,13 +47,37 @@ class SUT {
 }
 
 public class MockitoSample {
+    @Mock
+    private List<String> mockedList;
+
+    @Mock
+    private Point mockedPoint;
+
+    private SUT sut;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+
+        sut = new SUT();
+
+        MockitoAnnotations.initMocks(this);
+        // Field의 @Mock에 대해서 자동으로 생성해줍니다.
+
+        // mockedList = createMock();
+    }
+
+
+    @SuppressWarnings("unchecked")
+    private List<String> createMock() {
+        return mock(List.class);
+    }
 
     // verify - 순서를 확인하지 않습니다.
     //  => inOrder
     @Test
     public void kooTest() throws Exception {
-        List<String> mockedList = mock(List.class);
-        SUT sut = new SUT();
+        // List<String> mockedList = createMock();
+        // SUT sut = new SUT();
 
         sut.koo(mockedList);
 
@@ -59,6 +87,57 @@ public class MockitoSample {
         inOrder.verify(mockedList).add("third");
     }
 
+    // - 호출 횟수 지정 방법
+    // times(1): 정확한 횟수를 지정한다.
+    // atLeast(N), atLeastOnce(): N번 이상
+    // atMost(N), atMostOnce(): N번 이하
+
+    // - 호출 인자
+    //   anyXXX()
+    //  : 인자는 상관하지 않고, 함수의 호출 여부만을 검증할 수 있습니다.
+    @Test
+    public void gooTest() throws Exception {
+        // List<String> mockedList = createMock();
+        // SUT sut = new SUT();
+
+        sut.goo(mockedList);
+
+        verify(mockedList, atLeastOnce()).add(anyString());
+
+        // verify(mockedList, atLeastOnce()).add("once");
+        // verify(mockedList, atMostOnce()).add("twice");
+    }
+
+    // 호출 여부
+    @Test
+    public void fooTest() throws Exception {
+        // List<String> mockedList = createMock();
+        // SUT sut = new SUT();
+
+        sut.foo(mockedList);
+
+        verify(mockedList).add("one");
+        verify(mockedList).add("two");
+    }
+
+    @Test
+    public void hooTest() throws Exception {
+        sut.hoo(mockedPoint);
+
+        verify(mockedPoint, atLeastOnce()).move(eq(10), anyInt());
+    }
+
+/*
+    @Test
+    public void fooTest_stateCheck() throws Exception {
+        List<String> s = new ArrayList<>();
+        SUT sut = new SUT();
+
+        sut.foo(s);
+
+        assertEquals("one", s.get(0), "0번째");
+        assertEquals("two", s.get(1), "1번째");
+    }
 
     @Test
     public void hooTest() throws Exception {
@@ -74,51 +153,6 @@ public class MockitoSample {
         verify(mockedPoint).move(eq(10), anyInt());
     }
 
-
-    // - 호출 횟수 지정 방법
-    // times(1): 정확한 횟수를 지정한다.
-    // atLeast(N), atLeastOnce(): N번 이상
-    // atMost(N), atMostOnce(): N번 이하
-
-    // - 호출 인자
-    //   anyXXX()
-    //  : 인자는 상관하지 않고, 함수의 호출 여부만을 검증할 수 있습니다.
-    @Test
-    public void gooTest() throws Exception {
-        List<String> mockedList = mock(List.class);
-        SUT sut = new SUT();
-
-        sut.goo(mockedList);
-
-        verify(mockedList).add(anyString());
-
-        // verify(mockedList, atLeastOnce()).add("once");
-        // verify(mockedList, atMostOnce()).add("twice");
-    }
-
-    // 호출 여부
-    @Test
-    public void fooTest() throws Exception {
-        List<String> mockedList = mock(List.class);
-        SUT sut = new SUT();
-
-        sut.foo(mockedList);
-
-        verify(mockedList).add("one");
-        verify(mockedList).add("two");
-    }
-
-/*
-    @Test
-    public void fooTest_stateCheck() throws Exception {
-        List<String> s = new ArrayList<>();
-        SUT sut = new SUT();
-
-        sut.foo(s);
-
-        assertEquals("one", s.get(0), "0번째");
-        assertEquals("two", s.get(1), "1번째");
-    }
  */
 }
 
