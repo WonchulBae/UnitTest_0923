@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a939866-7f92-4e2b-8b60-d8f80da8c488" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/lge/ex12/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex12/MockitoSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex12/MockitoSample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex12/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex12/Point.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex12/SUT.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex12/SUT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lge/ex12/MockitoSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lge/ex12/MockitoSample.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MockitoSample.stubTest">
+  <component name="RunManager" selected="JUnit.UserTest">
     <configuration name="MockitoSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
@@ -64,22 +63,6 @@
       <option name="PACKAGE_NAME" value="com.lge.ex12" />
       <option name="MAIN_CLASS_NAME" value="com.lge.ex12.MockitoSample" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MockitoSample.gooTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UnitTest_0923" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lge.ex12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex12" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex12.MockitoSample" />
-      <option name="METHOD_NAME" value="gooTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,13 +115,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTest_0923" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lge.ex12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lge.ex12" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex12.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.MockitoSample.stubTest" />
         <item itemvalue="JUnit.MockitoSample.hooTest" />
         <item itemvalue="JUnit.MockitoSample" />
         <item itemvalue="JUnit.MockitoSample.kooTest" />
-        <item itemvalue="JUnit.MockitoSample.gooTest" />
       </list>
     </recent_temporary>
   </component>
