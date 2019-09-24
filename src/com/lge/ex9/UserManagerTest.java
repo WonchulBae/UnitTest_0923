@@ -11,6 +11,10 @@ import static org.junit.Assert.assertEquals;
 // 1) 아직 만들어지지 않은 컴포넌트에 의존하는 객체를 검증하고 싶다.
 // 2) 의존 객체가 너무 느려서, 테스트하기 힘들다.
 // 3) 의존 객체를 사용하기 어려울 때 사용할 수 있다.
+//  : SUT가 의존하는 컴포넌트를 훨씬 가겹게 구현된 것으로 바꾼다.
+
+// 문제점
+//  : 테스트 코드의 유지보수성이 떨어질 수 있다.
 
 class FakeDatabase implements Database {
     private Map<String, User> data = new HashMap<>();
