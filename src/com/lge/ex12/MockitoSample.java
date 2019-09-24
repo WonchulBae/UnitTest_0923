@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.Spy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,41 +13,32 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
+// Mock Framework는 단순히 행위 기반 검증의 기능만 제공하는 것이 아니라,
+// Stub도 만들 수 있습니다.
+
 class Point {
     private int x;
     private int y;
+
+    String name() { return "Point"; }
 
     public void move(int x, int y) {
     }
 }
 
-class SUT {
-    public void koo(List<String> s) {
-        s.add("first");
-        s.add("second");
-        s.add("third");
-    }
-
-    public void hoo(Point point) {
-        point.move(10, 20);
-        point.move(10, 30);
-        point.move(10, 40);
-    }
-
-    public void foo(List<String> s) {
-        s.add("one");
-        s.add("two");
-    }
-
-    public void goo(List<String> s) {
-        s.add("once");
-        s.add("once");
-        s.add("twice");
-        s.add("twice");
-    }
-}
-
 public class MockitoSample {
+    // when
+    //  : 메소드의 결과를 변경할 때 사용하는 함수
+
+    @Test
+    public void stubTest() throws Exception {
+       // Arrange
+       when(mockedPoint.name()).thenReturn("Hello, Point");
+
+       System.out.println(mockedPoint.name());
+    }
+
+
     @Mock
     private List<String> mockedList;
 
@@ -157,6 +149,32 @@ public class MockitoSample {
 }
 
 
+
+class SUT {
+    public void koo(List<String> s) {
+        s.add("first");
+        s.add("second");
+        s.add("third");
+    }
+
+    public void hoo(Point point) {
+        point.move(10, 20);
+        point.move(10, 30);
+        point.move(10, 40);
+    }
+
+    public void foo(List<String> s) {
+        s.add("one");
+        s.add("two");
+    }
+
+    public void goo(List<String> s) {
+        s.add("once");
+        s.add("once");
+        s.add("twice");
+        s.add("twice");
+    }
+}
 
 
 

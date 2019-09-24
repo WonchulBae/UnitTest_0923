@@ -52,23 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MockitoSample.hooTest">
-    <configuration name="DLogTest.writeTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UnitTest_0923" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lge.ex11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex11" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex11.DLogTest" />
-      <option name="METHOD_NAME" value="writeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MockitoSample.stubTest">
     <configuration name="MockitoSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
@@ -132,13 +116,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MockitoSample.stubTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTest_0923" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lge.ex12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lge.ex12" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex12.MockitoSample" />
+      <option name="METHOD_NAME" value="stubTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MockitoSample.stubTest" />
         <item itemvalue="JUnit.MockitoSample.hooTest" />
         <item itemvalue="JUnit.MockitoSample" />
         <item itemvalue="JUnit.MockitoSample.kooTest" />
         <item itemvalue="JUnit.MockitoSample.gooTest" />
-        <item itemvalue="JUnit.DLogTest.writeTest (1)" />
       </list>
     </recent_temporary>
   </component>
