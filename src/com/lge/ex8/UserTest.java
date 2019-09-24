@@ -27,7 +27,6 @@ class BadConnection implements Connection {
     }
 }
 
-
 public class UserTest {
     // 1. x, y가 잘못된 인자가 전달되었을 때, 예외가 발생하는지 여부를 검증하고 싶다.
 
