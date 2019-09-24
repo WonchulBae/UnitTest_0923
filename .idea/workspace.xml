@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a939866-7f92-4e2b-8b60-d8f80da8c488" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_mockito_mockito_core_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/lge/ex11/DLogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/lge/ex12/MockitoSample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnitTest_0923.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UnitTest_0923.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/lge/ex10/DLogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/lge/ex10/DLogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex11/DLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UnitTest_0923/com/lge/ex11/DLog.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DLogTest.writeTest (1)">
+  <component name="RunManager" selected="JUnit.MockitoSample">
     <configuration name="DLogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
@@ -100,16 +98,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MockitoSample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UnitTest_0923" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lge.ex9.*" />
+          <option name="PATTERN" value="com.lge.ex12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lge.ex9" />
-      <option name="MAIN_CLASS_NAME" value="com.lge.ex9.UserManagerTest" />
+      <option name="PACKAGE_NAME" value="com.lge.ex12" />
+      <option name="MAIN_CLASS_NAME" value="com.lge.ex12.MockitoSample" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MockitoSample" />
         <item itemvalue="JUnit.DLogTest.writeTest (1)" />
         <item itemvalue="JUnit.DLogTest" />
         <item itemvalue="JUnit.DLogTest.writeTest" />
         <item itemvalue="JUnit.UserManagerTest.createTest" />
-        <item itemvalue="JUnit.UserManagerTest" />
       </list>
     </recent_temporary>
   </component>
